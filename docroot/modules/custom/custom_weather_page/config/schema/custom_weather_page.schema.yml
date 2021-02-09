@@ -1,0 +1,21 @@
+# Schema for the configuration files of the custom_weather_page module.
+custom_weather_page_settings_form:
+  type: config_object
+  label: 'Configuration weather form settings'
+  mapping:
+    weather:
+      type: mapping
+      label: 'Basic configuration'
+      mapping:
+        city_name:
+          type: text
+          label: 'City name of default service consuming'
+        country_code:
+          type: text
+          label: 'Country code of default service consuming'
+        api_endpoint:
+          type: text
+          label: 'Api endpoint of access to service'
+        apy_key:
+          type: text
+          label: 'Api key of access to service'

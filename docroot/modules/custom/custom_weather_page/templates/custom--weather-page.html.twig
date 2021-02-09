@@ -1,0 +1,36 @@
+<div>
+  <h2>{{ 'Weather for '|t }} {{ content.city_name }}</h2>
+  {% if content is not empty %}
+    <div>
+      <h4>{{ 'Current Weather'|t }}</h4>
+      <span>{{ content.current_weather }}</span>
+    </div>
+    <div>
+      <h4>{{ 'Description'|t }}</h4>
+      <span>{{ content.description }}</span>
+    </div>
+    <div>
+      <h4>{{ 'Temperature'|t }}</h4>
+      <span>{{ content.temperature }}</span>
+    </div>
+    <div>
+      <h4>{{ 'Max Temperature'|t }}</h4>
+      <span>{{ content.max_temperature }}</span>
+    </div>
+    <div>
+      <h4>{{ 'Min Temperature'|t }}</h4>
+      <span>{{ content.min_temperature }}</span>
+    </div>
+    <div>
+      <h4>{{ 'Humidity'|t }}</h4>
+      <span>{{ content.humidity }}</span>
+    </div>
+    <div>
+      <h4>{{ 'Pressure'|t }}</h4>
+      <span>{{ content.pressure }}</span>
+    </div>
+  {% else %}
+    <p>{{ 'Please relaoad the page the service is unavalilable'|t }}</p>
+  {% endif %}
+
+</div>

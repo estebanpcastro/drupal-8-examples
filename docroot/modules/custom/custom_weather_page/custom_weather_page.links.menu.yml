@@ -1,0 +1,6 @@
+custom_weather_page.weather_form_settings:
+  title: 'Configuration service weather'
+  parent: system.admin_config_services
+  description: 'Configure api access to weather service.'
+  route_name: custom_weather_page.weather_form_settings
+  weight: -1

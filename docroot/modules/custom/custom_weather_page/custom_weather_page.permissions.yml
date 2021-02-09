@@ -1,0 +1,7 @@
+show weather content:
+  title: 'Access to see weather page'
+  description: ''
+
+access administration weather:
+  title: 'Access to configure weather parameters and api key'
+  description: ''

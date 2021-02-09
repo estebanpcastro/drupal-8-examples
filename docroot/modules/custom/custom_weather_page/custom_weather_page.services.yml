@@ -1,0 +1,4 @@
+services:
+  custom_weather_page_sevice:
+    class: Drupal\custom_weather_page\WeatherServiceClient
+    arguments: ['@http_client_factory', '@config.factory']

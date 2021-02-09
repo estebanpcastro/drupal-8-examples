@@ -1,0 +1,5 @@
+custom_weather_page.weather_form_settings:
+    route_name : custom_weather_page.weather_form_settings
+    title: Configuration weather
+    base_route: custom_weather_page.weather_form_settings
+    weight: 10

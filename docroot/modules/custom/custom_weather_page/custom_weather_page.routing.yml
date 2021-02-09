@@ -1,0 +1,17 @@
+custom_weather_page.weather:
+  path: '/weather/{city_name}/{country_code}'
+  defaults:
+    _controller: '\Drupal\custom_weather_page\Controller\WeatherController::content'
+    _title: 'Show current weather from OpenWeatherMap.org'
+    city_name: ''
+    country_code: ''
+  requirements:
+    _permission: 'show weather content'
+
+custom_weather_page.weather_form_settings:
+  path: '/admin/config/services/weather'
+  defaults:
+    _form: '\Drupal\custom_weather_page\Form\WeatherSettingsForm'
+    _title: 'Weather Settings'
+  requirements:
+    _permission: 'access administration weather'

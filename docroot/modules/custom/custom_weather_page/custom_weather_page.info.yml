@@ -1,0 +1,5 @@
+name: 'Custom weather page'
+type: module
+description: 'Show current weather by city name o country code.'
+core: 8.x
+package: 'Custom'
